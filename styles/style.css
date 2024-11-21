@@ -17,4 +17,51 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family), sans-serif;
+  font-variation-settings: "wght" var(--wght-card-text);
+  color: var(--accent-color);
+  background-color: var(--background-color);
+  background-image: var(--backgound-image);
+  background-size: cover;
+}
+
+.header {
+  font-family: var(--accent-family), sans-serif;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  /* min-block-size: 364px; */
+  min-inline-size: 696px;
+  border: 2px solid #000;
+  background-color: inherit;
+  padding-block-start: 136px;
+  margin-block-start: 214px;
+}
+
+.header__title {
+  font-size: 65px;
+  text-transform: uppercase;
+  margin-block-end: 20px;
+}
+
+.heder__description {
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-block-end: 25px;
+}
+
+.theme-menu__list {
+  display: grid;
+  gap: 14px;
+  padding-block-end: 25px;
+}
+
+.theme-menu__button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 14px;
 }
