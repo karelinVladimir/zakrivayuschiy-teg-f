@@ -15,18 +15,10 @@
 
 @keyframes themes {
   0% {
-    inset-inline-start: -15px;
+    inset-inline-start: -20px;
   }
   100% {
-    inset-inline-start: -11px;
+    inset-inline-start: -16px;
   }
 }
 
-/* @keyframes themes-focus {
-   0% {
-      transform: scaleX(0);
-   }
-   100% {
-      transform: scaleX(1);
-   }
-} */
