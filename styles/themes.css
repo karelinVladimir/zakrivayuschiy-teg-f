@@ -8,16 +8,22 @@
 :root.theme-light {
   --accent-color: #000;
   --background-color: #fff;
+  --color-svg-core: #000;
+  --color-svg-sparks: #ff0000;
 }
 
 :root.theme-dark {
   --accent-color: #00cc14;
   --background-color: #000;
+  --color-svg-core: #00cc14;
+  --color-svg-sparks: #ff0000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #00cc14;
     --background-color: #000;
+    --color-svg-core: #00cc14;
+    --color-svg-sparks: #ff0000;
   }
 }
