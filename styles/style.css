@@ -107,7 +107,12 @@
 }
 
 .main {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 52px;
   padding-block-start: 100px;
+  margin-block-end: 105px;
 }
 
 .card__item {
@@ -166,6 +171,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  gap: 5px;
   padding: 25px;
 }
 
@@ -175,7 +181,6 @@
   height: 38px;
   width: 39px;
   background-color: transparent;
-  margin-inline-end: 5px;
   cursor: pointer;
   transition: outline 0.3s ease;
 }
@@ -262,9 +267,9 @@
   line-height: 90%;
   font-family: var(--accent-family), sans-serif;
   border: 2px solid var(--accent-color);
-  background-color: inherit;
   overflow: hidden;
   transition: box-shadow 0.3s;
+  background-color: var(--background-color);
 }
 
 .card__like-button:focus {
@@ -297,6 +302,14 @@
   mix-blend-mode: difference;
 }
 
-/* .card__like-button {
-  background-color: var(--background-color);
-} */
+.card__save-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.floppy-icon {
+  color: #fff;
+  fill: #fff;
+  /* mix-blend-mode: difference; */
+}
