@@ -100,28 +100,39 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
-                <span class="button-text">Like</span>
+              <button class="button card__like-button">
+                <span class="button__text">Like</span>
               </button>
             </div>
           </article>
         </li>
       </ul>
 
-      <button class="card__like-button card__save-button">
-      <svg class="floppy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" width="21" height="21">
+      <button 
+      class="button button__save"
+      type="button"
+      onclick="window['popup-id'].showModal();"
+      aria-controls="popup-id"
+      >
+
+      <svg class="floppy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" width="39" height="39">
         <use href="./svg/floppy.svg#floppy">
       </svg>
-        <span class="button-text">Сохранить на память</span>
+        <span class="button__text">Сохранить на память</span>
       </button>
 
-          <dialog open>
-      <h3>Вставьте дискету, чтобы продолжить</h3>
-      <button>ok</button>
-        <svg viewBox="0 0 21 21">
-        <use href="./svg/floppy.svg#floppy">
-      </svg>
-    </dialog>
+          <dialog class="popup" id="popup-id">
+            <div class="popup__wrapper">
+              <svg class="floppy-icon popup-floppy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" width="39" height="39">
+                <use href="./svg/floppy.svg#floppy">
+              </svg>
+              <h3 class="popup__title">Вставьте дискету, чтобы продолжить</h3>
+            </div>
+            <button class="button popup__close-button"
+            type="button"
+            onclick="window['popup-id'].close()"
+            >ok</button>
+          </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

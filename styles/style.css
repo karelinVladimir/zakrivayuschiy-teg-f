@@ -29,10 +29,10 @@
 }
 
 .header {
-  font-family: var(--accent-family), sans-serif;
   display: grid;
   place-content: center;
   place-items: center;
+  font-family: var(--accent-family), sans-serif;
   min-block-size: 364px;
   min-inline-size: 696px;
   border: 2px solid #000;
@@ -259,17 +259,20 @@
   animation-delay: 0.3s;
 }
 
-.card__like-button {
+.button {
   position: relative;
-  padding-block: 12.5px;
-  padding-inline: 37px;
   font-size: 14px;
   line-height: 90%;
   font-family: var(--accent-family), sans-serif;
   border: 2px solid var(--accent-color);
   overflow: hidden;
   transition: box-shadow 0.3s;
-  background-color: var(--background-color);
+  cursor: pointer;
+}
+
+.card__like-button { 
+  block-size: 38px;
+  inline-size: 130px;
 }
 
 .card__like-button:focus {
@@ -278,10 +281,6 @@
 
 .card__like-button:focus-visible {
   box-shadow: 2px 2px var(--accent-color);
-}
-
-.card__like-button:hover {
-  cursor: pointer;
 }
 
 .card__like-button:hover::before {
@@ -295,21 +294,61 @@
   z-index: 1;
 }
 
-.button-text {
+.button__text {
   position: relative;
   z-index: 2;
   color: var(--hover-color-button-text);
   mix-blend-mode: difference;
 }
 
-.card__save-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.button__save {
+  padding-block: 18.5px;
+  padding-inline-start: 19px;
+  padding-inline-end: 21px;
 }
 
 .floppy-icon {
-  color: #fff;
-  fill: #fff;
-  /* mix-blend-mode: difference; */
+  max-width: 19px;
+  max-height: 19px;
+  z-index: 2;
+  color: var(--hover-color-button-text);
+  mix-blend-mode: difference;
+}
+
+.popup[open] {
+  position: fixed;
+  inset: 0;
+  padding: 30px;
+  display: grid;
+  gap: 30px;
+  border: 2px solid var(--accent-color);
+}
+
+.popup::backdrop {
+  background: #000;
+  opacity: 0.75;
+}
+
+.popup__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.popup__title {
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-family: var(--accent-family), sans-serif;
+  inline-size: 234px;
+}
+
+.popup__close-button {
+  padding-block: 11px;
+  inline-size: 100%;
+}
+
+.popup-floppy {
+  max-width: 39px;
+  max-height: 39px;
 }
