@@ -34,7 +34,7 @@
 :root.theme-dark {
   --accent-color: #00cc14;
   --background-color: #000;
-  --color-svg-core: #ff0000;
+  --color-svg-core: #00cc14;
   --color-svg-counter: #00cc14;
   --wght-card-title: 785;
   --wght-card-text: 465;
@@ -59,7 +59,7 @@
   :root { 
     --accent-color: #00cc14;
     --background-color: #000;
-    --color-svg-core: #ff0000;
+    --color-svg-core: #00cc14;
     --color-svg-counter: #00cc14;
     --wght-card-title: 785;
     --wght-card-text: 465;
