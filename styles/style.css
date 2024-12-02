@@ -114,7 +114,7 @@
   display: grid;
   place-content: center;
   place-items: center;
-  gap: 42px;
+  gap: 44px;
   padding-block-start: 100px;
   margin-block-end: 103px;
 }
@@ -140,7 +140,7 @@
 
 .card__image-wrapper {
   position: relative;
-  block-size: clamp(23.4375rem, 14.3182rem + 38.9091vw, 43.5rem);
+  block-size: clamp(23.1875rem, 13.9545rem + 39.3939vw, 43.5rem);
 }
 
 .card__image {
@@ -398,9 +398,8 @@
 }
 
 @media (width <= 375px) {
-  .header {
-    block-size: 100%;
-    inline-size: 100%;
+  .main {
+    gap: 50px;
   }
 
   .card {
