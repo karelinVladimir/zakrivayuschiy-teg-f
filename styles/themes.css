@@ -9,21 +9,74 @@
   --accent-color: #000;
   --background-color: #fff;
   --color-svg-core: #000;
-  --color-svg-sparks: #ff0000;
+  --color-svg-counter: #000;
+  --font-family: "Inter";
+  --accent-family: "PressStart2P";
+  --wght-card-title: 700;
+  --wght-card-text: 400;
+  --hover-color-button-text: #fff;
+  --backgound-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      rgb(211 211 211 / 0) 2px,
+      rgb(211 211 211 / 0) 4px
+    ),
+    repeating-linear-gradient(
+      #d3d3d3,
+      #d3d3d3 2px,
+      rgb(211 211 211 / 0) 2px,
+      rgb(211 211 211 / 0) 4px
+    ),
+    linear-gradient(#e7e7e7, #1a1a1a);
 }
 
 :root.theme-dark {
   --accent-color: #00cc14;
   --background-color: #000;
-  --color-svg-core: #00cc14;
-  --color-svg-sparks: #ff0000;
+  --color-svg-core: #ff0000;
+  --color-svg-counter: #00cc14;
+  --wght-card-title: 785;
+  --wght-card-text: 465;
+  --hover-color-button-text: #00cc14;
+  --backgound-image: repeating-linear-gradient(
+      90deg,
+      #000,
+      #000 2px,
+      rgb(0 0 0 / 0) 2px,
+      rgb(0 0 0 / 0) 4px
+    ),
+    repeating-linear-gradient(
+      #000,
+      #000 2px,
+      rgb(0 0 0 / 0) 2px,
+      rgb(0 0 0 / 0) 4px
+    ),
+    linear-gradient(#007f0c, #004306);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root { 
     --accent-color: #00cc14;
     --background-color: #000;
-    --color-svg-core: #00cc14;
-    --color-svg-sparks: #ff0000;
+    --color-svg-core: #ff0000;
+    --color-svg-counter: #00cc14;
+    --wght-card-title: 785;
+    --wght-card-text: 465;
+    --hover-color-button-text: #00cc14;
+    --backgound-image: repeating-linear-gradient(
+        90deg,
+        #000,
+        #000 2px,
+        rgb(0 0 0 / 0) 2px,
+        rgb(0 0 0 / 0) 4px
+      ),
+      repeating-linear-gradient(
+        #000,
+        #000 2px,
+        rgb(0 0 0 / 0) 2px,
+        rgb(0 0 0 / 0) 4px
+      ),
+      linear-gradient(#007f0c, #004306);
   }
 }
