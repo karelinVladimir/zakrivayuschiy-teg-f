@@ -246,7 +246,6 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: none;
   outline: 2px solid var(--accent-color);
 }
 
